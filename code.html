@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #atl-time {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  </style>
+  <script>
+    function updateTime() {
+      const atlTime = new Date().toLocaleString("en-US", { timeZone: "America/New_York", timeStyle: "short", hourCycle: "h23" });
+      document.getElementById("atl-time").textContent = `Current time in Atlanta: ${atlTime}`;
+    }
+    setInterval(updateTime, 1000);
+    window.onload = updateTime;
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Arjun Iyer</h1>
+    <p>Student | Aspiring Electrical Engineer | Problem Solver</p>
+    <div id="atl-time"></div>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I am a high school junior with a strong interest in electrical engineering and computer science. I'm passionate about building meaningful projects and solving real-world problems.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong> </strong> </li>
+        <li><strong> </strong> </li>
+        <li><strong> </strong> </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </section>
+  </main>
+</body>
+</html>
